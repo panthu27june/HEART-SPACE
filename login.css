@@ -1,0 +1,185 @@
+/* body{
+    background: linear-gradient(to right, skyblue, #FFCCE1, #FFCCE1, skyblue);
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+.account{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+.form{
+    background-color: #FFF5D7;
+    color: black;
+    border-radius: 15px;
+}
+input{
+    width: 300px;
+    height: 25px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: medium;
+}
+.ss{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1px;
+}
+
+
+button{
+    font-size: 25px;
+    padding: 5px;
+    margin: 10px;
+    background-color: gray;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+button:link{
+    color: skyblue;
+    text-decoration: none;
+}
+button:hover{
+    background-color: skyblue;
+    border-radius: 10px;
+    color: #EE4B2B;
+    text-decoration: none;
+  }
+  button:active{
+    color: white;
+    text-decoration: none;
+  } */
+
+
+/* assets/css/login.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* background: linear-gradient(to right, #fff, #fcecec); */
+    background: linear-gradient(to right, skyblue, #FFCCE1, #FFCCE1, skyblue);
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: skyblue;
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.account h1 {
+    font-size: 2.5rem;
+    color: #EE4B2B;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.account h2 {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form {
+    margin-top: 10px;
+}
+
+.form h2 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #EE4B2B;
+}
+
+.ss {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.su button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.su button:hover {
+    background-color: #ee4b2b;
+    text-decoration: underline;
+    /* color: white; */
+}
+
+.su p {
+    margin-top: 15px;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.su a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.su a:hover {
+    color: #ee4b2b;
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+    form {
+        padding: 25px 20px;
+    }
+
+    .account h1 {
+        font-size: 2rem;
+    }
+}
